@@ -28,17 +28,17 @@ HTML, CSS, JavaScript를 활용하여
 ---
 
 ## 프로젝트 구조
-PC-cafe/
-│
-├── PC-cafe.html        # 메인 키오스크 화면
-├── receipt1.html       # 카드 결제 페이지
-├── receipt2.html       # 현금 결제 페이지
-│
-└── menu/               # 메뉴 이미지 폴더
-    ├── ramen1.jpg
-    ├── side1.jpg
-    ├── dinner1.jpg
-    ├── drink1.jpg
+PC-cafe/ <br>
+│    <br>
+├── PC-cafe.html        # 메인 키오스크 화면 <br>
+├── receipt1.html       # 카드 결제 페이지 <br>
+├── receipt2.html       # 현금 결제 페이지 <br>
+│    <br>
+└── menu/               # 메뉴 이미지 폴더 <br>
+    ├── ramen1.jpg    <br>
+    ├── side1.jpg    <br>
+    ├── dinner1.jpg    <br>
+    ├── drink1.jpg    <br>
     └── ...
 
 
