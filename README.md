@@ -1,6 +1,6 @@
 ## 🎮 PC-Cafe Kiosk Project
 ---
-프로젝트 소개
+### 프로젝트 소개
 
 PC방 키오스크를 웹으로 구현한 미니 프로젝트입니다.
 HTML, CSS, JavaScript를 활용하여
