@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            background: #0f172a;
+            font-family: Arial, sans-serif;
+            zoom:1;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+        }
+
+        button {
+            width: 300px;
+            height: 60px;
+            font-size: 24px;
+        }
+        .btn {margin-top : 20px;
+            font-size: 16px;
+            background: #f97316;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.2s;
+        
+        }
+        .btn:hover{
+            background: #fb923c;
+            transform: scale(1.05);            
+        }
+    
+            
+        img {
+            width : 300px;
+            height: 300px;
+
+        }
+        .testpic{
+            margin-top: 80px;
+        }
+        #ramen_menu {
+            display: none;
+        }
+        #side_menu {
+            display: none;
+        }
+        #dinner_menu {
+            display: none;
+        }
+        #drink_menu {
+            display: none;
+        }
+
+        #bill{
+            background: #1e293b;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            margin-left :30px;
+            width: 700px;
+            text-align: center; 
+            display: none;         
+        }
+        #q{
+            background-color: white;
+            background: #22c55e;
+            border-radius: 10px;
+            color : white;
+            border: 1px solid black;
+            font-size: 40px;
+            margin-top: 50px;
+        }
+        #selected_list{
+            background-color: rgb(241, 239, 239);
+            border: 1px solid black;
+            font-size: 30px;
+            border-radius: 10px;
+            margin-top: 110px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 700px;
+        }
+        .how {
+            width: 30px;
+            height: 30px;
+            font-size: 50px;
+
+        }
+        #end {
+            margin-top: 100px;
+            width: 300px;
+            height: 150px;
+            font-size: 50px;
+        }
+
+        #sum {
+            margin-top: 50px;
+            width: 200px;
+            height: 50px;
+            font-size: 30px;
+            background: #22c55e;
+            border-radius: 10px;
+            color: white;
+        }
+        #end{
+            background: #22c55e;
+            border-radius: 10px;
+            color: white;
+                    
+        }
+        #end:hover{
+            background: #129441;
+            transform: scale(1.05);
+        }
+        #qwe{
+            color : white;
+        }
+    </style>
+</head>
+
+<body id = 'interface'>
+    <button class= "btn" value ="ramen">라면류</button>
+    <button class= "btn" value ="side">사이드류</button>
+    <button class = "btn" value="drink">음료류</button>
+    <button class = "btn" value="dinner">식사류</button>
+
+<span class="container">
+    <div id ="ramen_menu" class ="q">
+    <img src = "\menu\ramen1.jpg" class ="testpic" data-value="삼양라면 3500">
+    <img src = "\menu\ramen2.jpg" class ="testpic" data-value="진라면 4000"> 
+    <img src = "\menu\ramen3.jpg" class ="testpic" data-value="너구리 5000"> 
+    <img src = "\menu\ramen4.jpg" class ="testpic" data-value="짜파게티 3000"> <br>
+    <img src = "\menu\ramen5.jpg" class ="testpic" data-value="불닭볶음면 2800"> 
+    <img src = "\menu\ramen6.jpg" class ="testpic" data-value="팔도비빔면 3200"> 
+    <img src = "\menu\ramen7.jpg" class ="testpic" data-value="무파마 3300"> 
+    <img src = "\menu\ramen8.jpg" class ="testpic" data-value="오징어짬뽕 4400"> <br>
+    </div>
+
+    <div id ="side_menu" class="q">
+    <img src = "\menu\side1.jpg" class ="testpic" data-value="감자튀김 2000">
+    <img src = "\menu\side2.jpg" class ="testpic" data-value="찐만두 1500"> 
+    <img src = "\menu\side3.jpg" class ="testpic" data-value="핫바 2500"> 
+    <img src = "\menu\side4.jpg" class ="testpic" data-value="양념감자 2300"> <br>
+    <img src = "\menu\side5.jpg" class ="testpic" data-value="오징어링 3000"> 
+    <img src = "\menu\side6.jpg" class ="testpic" data-value="포카칩 1200"> 
+    <img src = "\menu\side7.jpg" class ="testpic" data-value="군만두 2000"> 
+    <img src = "\menu\side8.jpg" class ="testpic" data-value="오징어집 1300"> <br>
+    </div>
+
+    <div id ="dinner_menu" class="q">
+    <img src = "\menu\dinner1.jpg" class ="testpic" data-value="제육덮밥 5500">
+    <img src = "\menu\dinner2.jpg" class ="testpic" data-value="돈까스 7000"> 
+    <img src = "\menu\dinner3.jpg" class ="testpic" data-value="돼지국밥 8000"> 
+    <img src = "\menu\dinner4.jpg" class ="testpic" data-value="치킨마요덮밥 6000"> <br>
+    <img src = "\menu\dinner5.jpg" class ="testpic" data-value="비빔밥 5600"> 
+    <img src = "\menu\dinner6.jpg" class ="testpic" data-value="육회덮밥 8500"> 
+    <img src = "\menu\dinner7.jpg" class ="testpic" data-value="뼈해장국 9000"> 
+    <img src = "\menu\dinner8.jpg" class ="testpic" data-value="떡국 5200"> <br>
+    </div>    
+
+    <div id ="drink_menu" class ="q">
+    <img src = "\menu\drink1.jpg" class ="testpic" data-value="콜라 1000">
+    <img src = "\menu\drink2.jpg" class ="testpic" data-value="사이다 1200"> 
+    <img src = "\menu\drink3.jpg" class ="testpic" data-value="아메리카노 2000"> 
+    <img src = "\menu\drink4.jpg" class ="testpic" data-value="카페라떼 3000"> <br>
+    <img src = "\menu\drink5.jpg" class ="testpic" data-value="망고스무디 3300"> 
+    <img src = "\menu\drink6.jpg" class ="testpic" data-value="딸기주스 3500"> 
+    <img src = "\menu\drink7.jpg" class ="testpic" data-value="아이스티 3800"> 
+    <img src = "\menu\drink8.jpg" class ="testpic" data-value="초코우유 4000"> <br>
+    </div>
+    <div id="bill">
+        <div id="q">담은 메뉴</div>
+        <div id="selected_list">선택한 메뉴<br><hr>
+            <p id ="menus"></p>
+        </div><br>
+        <div id ="qwe">
+        <input type ="checkbox" class ="how">카드 결제
+        <input type="checkbox" class="how">현금 결제<br>
+        총액 : <input type="text" id="sum" value= "0"><br>
+        <input type="button" value ="결제" id="end">
+        </div>
+</span>
+    <script>
+        let how =document.getElementsByClassName("how");
+        let end = document.getElementById("end");
+        let sum = document.getElementById("sum");
+        let sum_money = 0;
+        let bill = document.getElementById("bill");
+        let basket = document.getElementById("selected_list");
+        let interface = document.getElementById("interface");
+        let q = document.getElementsByClassName("q");
+        let select_menu = document.getElementsByClassName("btn");
+        let ramen_menu = document.getElementById("ramen_menu");
+        let side_menu =document.getElementById("side_menu");
+        let dinner_menu=document.getElementById("dinner_menu");
+        let drink_menu = document.getElementById("drink_menu");
+        let selecting = document.getElementsByClassName("testpic");
+        for(let i=0; i<select_menu.length;i++){
+            select_menu[i].onclick= function(){
+                if(this.value=="ramen"){
+                    ramen_menu.style.display="block";
+                    side_menu.style.display="none";
+                    dinner_menu.style.display="none";
+                    drink_menu.style.display="none";
+
+                }
+                else if(this.value=="side"){
+                    side_menu.style.display="block";
+                    ramen_menu.style.display="none";
+                    dinner_menu.style.display="none";
+                    drink_menu.style.display="none";
+                }
+                else if(this.value=="dinner"){
+                    dinner_menu.style.display="block";
+                    side_menu.style.display="none";
+                    ramen_menu.style.display="none";
+                    drink_menu.style.display="none";                 
+                }
+                else if(this.value=="drink"){                   
+                    drink_menu.style.display="block";
+                    side_menu.style.display="none";
+                    dinner_menu.style.display="none";
+                    ramen_menu.style.display="none";
+                }
+                    bill.style.display="block";
+            }
+        }
+        for(let j=0 ; j<selecting.length; j++){
+        selecting[j].onclick=function(){
+            let temp= confirm(`${this.dataset.value}원입니다. 담겠습니까?`);
+            if(temp ==true){
+                let n = document.getElementById('menus');
+                n.innerHTML+=`${this.dataset.value}원<br><hr>`;
+            }
+            let qwe = this.dataset.value.split(" ");
+            sum_money += parseInt(qwe[1]);
+            sum.value = sum_money;
+        }
+    }
+        end.onclick = function(){
+            if(how[0].checked && !(how[1].checked)){
+                let money = window.open("receipt1.html");
+                money.myvalue = sum.value;
+            }
+            else if (how[1].checked && !(how[0].checked)){
+                let money2 = window.open("receipt2.html");
+                money2.myvalue=sum.value;
+            }
+            else {
+                alert("결제 방법을 다시 선택해주세요");
+            }
+
+        }
+    </script>
+</body>
+</html>

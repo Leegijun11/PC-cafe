@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            width: 500px;
+            height: 900px;   
+            background-color: rgb(236, 236, 236);  
+            border: 1px solid black;       
+        }
+        #cash{
+            font-size: 40px;
+            text-align: center;
+
+        }
+        button{
+            font-size: 50px;
+            
+        }
+        #all_agree{
+            margin-left: 300px;
+        }
+        .agree{
+            margin-left: 150px;
+        }
+        span {
+            font-weight: bold;
+        }
+        #agree1{
+            font-size: 20px;
+        }
+        h3 {
+            text-align: center;
+        }
+        #receipt3{
+           margin-left: 200px;  
+        }
+    </style>
+
+</head>
+<body><div id="cash">
+    <h2>현금 결제</h2><hr>
+    <span>
+    <br>
+    <button class ="payment">현금결제</button>
+    <button class ="payment">계좌이체</button><br><br><hr>
+    </span>
+    </div>
+    <div id="agree1">
+    <span>이용약관</span><input type="checkbox" id ="all_agree">전체동의<br><hr>
+    <span>개인정보의 수집 및 이용약관</span><br>
+    <span>개인정보의 수집 및 이용안내</span>  <input type="checkbox" class="agree">동의<br>  
+    <span>개인정보 제공 및 위탁안내</span>  <input type="checkbox" class="agree">동의<br><hr>
+    <span>현금영수증 발행 여부</span><input type="checkbox" id="receipt3">발행<br><hr>
+    
+    <h3>이용약관을 모두 동의 후<br>
+        결제할 방법을 선택하세요
+    </h3><hr>
+    <h3>현금영수증 발행 시 <br>
+        발행에 체크하세요 </h3>    
+    </div>
+
+    <script>
+        let receipt3 = document.getElementById("receipt3");
+        let payment = document.getElementsByClassName("payment");
+        let all_agree = document.getElementById("all_agree");
+        let agree = document.getElementsByClassName("agree");
+        all_agree.onclick = function(){
+            agree[0].checked = true;
+            agree[1].checked = true;
+            if(all_agree.checked==false){
+                agree[0].checked=false;
+                agree[1].checked=false;
+            }
+        }
+        for(let j=0; j<payment.length;j++){
+        payment[j].onclick=function(){
+            if(agree[0].checked && agree[1].checked && receipt3.checked){
+                alert("현금영수증 발행이 진행됩니다.");
+                let q = confirm(`총 금액은 ${window.myvalue}원입니다.  결제하시겠습니까?`);
+                if(q==true){
+                    setTimeout(() => {
+                        alert("결제가 완료되었습니다.")
+                    }, 2000);
+                }
+            }
+            else if(agree[0].checked && agree[1].checked && !(receipt3.checked)){;
+                let q = confirm(`총 금액은 ${window.myvalue}원입니다.  결제하시겠습니까?`);
+                if(q==true){
+                    setTimeout(() => {
+                        alert("결제가 완료되었습니다.")
+                    }, 2000);
+                }
+            }               
+            else {
+                alert("이용약관을 동의해주세요");
+            }
+            }
+        }
+
+    </script>
+   
+</body>
+</html>
