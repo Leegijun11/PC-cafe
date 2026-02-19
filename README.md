@@ -13,9 +13,9 @@ HTML, CSS, JavaScript를 활용하여
 
 ## 사용 기술
 
-HTML
+-HTML
 
-CSS
+-CSS
 
 JavaScript (Vanilla JS)
 
