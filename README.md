@@ -109,7 +109,7 @@ PC-cafe/
 
 ## 구현 포인트
 ### window 객체를 통한 데이터 전달
-let money = window.open("receipt1.html");
+let money = window.open("receipt1.html"); <br>
 money.myvalue = sum.value;
 
 자식 창에서는
